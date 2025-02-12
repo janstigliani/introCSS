@@ -1,0 +1,113 @@
+/* body{
+    background-color: chocolate; !important
+    /* per forzare nel caso ci sia una regola successiva che sovrascrive */
+/* } */
+
+body{
+    background-color: azure;
+}
+
+h2{
+    color: blueviolet;
+    /* altra espressione del colore color: #0000ffff; */
+}
+/* non usare selettore per cose che non sono body, header o footer. USARE CLASSI */
+
+.green-big-title{
+    color: darkgreen;
+    font-size: xx-large;
+}
+.red-title{
+    color: red;
+}
+
+.background-magenta{
+    background-color: magenta;
+}
+
+.italic-font{
+    font: italic;
+    font: bold;
+}
+
+#lorem-p{
+    font-size: x-large;
+}
+
+header h1{
+    background-color: gold;
+}
+
+/* specifica la posizione del gruppo da modificare */
+
+header, footer {
+    border-style: solid;
+}
+
+/* la virgola mette tutto sullo stesso piano */
+
+footer{
+    /* padding-left: 30px;
+    padding-top: 20px;
+    padding-right: 25px;
+    padding-bottom: 50px; */
+
+    /* padding: 100px 50px 70px 200px;
+    ordine dei valori: top-right-bottom-left */
+
+    padding: 30px 100px;
+
+    /* 1° top, bottom 2° left, right */
+
+    margin: 100px 30px;
+
+    /* padding è il margine interno, margin è il margine esterno, funziona come il padding */
+}
+
+header{
+    background-image: url(./Assets/pngtree-modern-liquid-gradient-colors-abstract-background-design-template-for-brochures-flyers-image_910976.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    /* permette di centrare l'immagine, dicendo da quale posizione partire per il resize: */
+    height: 200px;
+}
+
+.resize-p{
+    background-color: tan;
+    /* width: 200px;
+    height: 100px; */
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    /* overflow: auto; consigliato*/
+
+    max-width: 800px;
+    min-width: 650px;
+    /* se rimpicciolito con costrizioni minime e massime va in overflow e diventa scrollabile di lato, MALE */
+}
+
+.mother{
+    background-color: fuchsia;
+    padding: 20px;
+    width: 800px;
+    /* border-radius: 30px; */
+    /* border-top-left-radius: 50px; */
+    border-radius: 70px 30px 4px 90px;
+    border: solid cadetblue 15px;
+}
+
+.son{
+    background-color: rgb(114, 69, 146);
+    /* width: 50%; */
+    /* riferito alla % dell'elemento padre che lo contiene */
+    width: 50vw;
+    /* vw è la percentuale in base alla viewport occupata dal browser */
+}
+
+.strange-borders{
+    border-style:dashed;
+    border-color: powderblue;
+    border-width: 8px;
+    border-radius: 50px;
+}
+

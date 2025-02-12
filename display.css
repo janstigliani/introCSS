@@ -1,0 +1,36 @@
+.first-element{
+    background-color: rgba(10, 192, 192, 0.773);
+    border-radius: 30px;
+    padding: 15px;
+    width: 300px;
+}
+
+.second-element{
+    background-color: rgba(156, 169, 9, 0.67);
+    border-radius: 30px;
+    padding: 15px;
+    width: 300px;
+    margin-left: 400px;
+}
+
+/* elementi inline non possono essere dimensionati, hanno dimensione del loro contenuto */
+
+.third-element{
+    color: rgb(160, 18, 18);
+    display: block;
+    background-color: rgba(10, 192, 192, 0.773);
+    border-radius: 30px;
+    padding: 15px;
+    width: 300px;
+}
+
+/* elementi inline-block rimangono inline ma possono essere dimensionati */
+
+.forth-element{
+    color: rgb(100, 242, 5);
+    display: inline-block;
+    background-color: rgba(180, 14, 130, 0.659);
+    border-radius: 30px;
+    padding: 15px;
+    width: 300px;
+}

@@ -1,0 +1,70 @@
+/* tutti gli elementi hanno come posizione standard "static", decisa dall'html */
+
+@import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
+
+.el-1{
+    background-color: aquamarine;
+    height: 200px;
+}
+
+.el-2{
+    background-color: rgb(90, 163, 22);
+    height: 200px;
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+
+.el-3{
+    background-color: rgb(132, 21, 125);
+    height: 200px;
+}
+
+.el-4{
+    background-color: rgb(19, 17, 151);
+    height: 200px;
+    width: 200px;
+    position:fixed;
+    left: 20px;
+    top: 50px;
+    right: 50px;
+}
+
+.el-5{
+    background-color: rgb(85, 123, 133);
+    height: 200px;
+   
+}
+
+.el-6{
+    background-color: rgb(183, 165, 29);
+    height: 300px;
+    position:relative;
+}
+
+.el-7{
+    background-color: rgb(172, 19, 19);
+    height: 200px;
+    position:absolute;
+    left: 20px;
+    top: 50px;
+    right: 50px;
+}
+
+.el-8{
+    background-color: rgb(121, 79, 42);
+    height: 200px;
+    width: 200px;
+    position:absolute;
+    right: 50px;
+    top: 50px;
+}
+
+/* una madre con position:relative diventa il punto di riferimento del figlio con position:absolute, quindi si può sfruttura questa combo per poter posizionare elementi nella pagina */
+
+.font-1{
+    font-family: "Barrio", serif;
+    color: rgb(169, 182, 147);
+}
+
+/* per quasi tutte le regole dei css i figli ereditano le regole dei genitori se non ci sono regole che le contraddicono */
