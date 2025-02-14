@@ -1,0 +1,117 @@
+/* .cour-xxs{
+    font-family:'Courier New', Courier, monospace;
+    font-size: xx-small;
+}
+
+.mono-xxl{
+    font-size: xx-large;
+    font-family: monospace;
+}
+
+.bgc-red{
+    background-color: red;
+    color: white;
+}
+
+.bgc-lblue{
+    background-color: rgb(12, 183, 126);
+    color: black;
+}
+
+.padding-small{
+    padding: 12px;
+}
+
+.padding-medium{
+    padding: 16px;
+}
+
+.padding-large{
+    padding: 20px;
+} */
+.height-200{
+    height: 200px;
+}
+
+.width-200{
+    width: 100px;
+} 
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 300px 300px 300px 300px;
+    grid-template-areas:
+    " header header header"
+    " left-sidebar main-content right-sidebar"
+    " left-sidebar-gold main-content right-sidebar"
+    " footer footer footer";
+    column-gap: 20px;
+    row-gap: 20px;
+    /* place-items: center; */
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 300px 300px 300px 300px 300px;
+        grid-template-areas:
+            " header header"
+            " left-sidebar left-sidebar-gold"
+            " main-content main-content"
+            " right-sidebar right-sidebar"
+            " footer footer";
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+}
+
+/* se non dai un min-width conta la posizione x scegliere quale delle due visualizzazioni utilizzare in caso di conflitto, legge dall'alto e comanda quello più in alto */
+
+@media (max-width: 576px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 300px 300px 300px 300px 300px;
+        grid-template-areas:
+            " header"
+            " left-sidebar"
+            " main-content"
+            " right-sidebar"
+            " left-sidebar-gold"
+            " footer";
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+}
+
+.g-i-1{
+ background-color: violet;
+ grid-area: header;
+}
+
+.g-i-2{
+    background-color: rgb(107, 8, 107);
+    grid-area: left-sidebar;
+}
+
+.g-i-3{
+    background-color: rgb(10, 36, 152);
+    grid-area: main-content;
+}
+
+.g-i-4{
+    background-color: rgb(22, 197, 118);
+    grid-area: right-sidebar;
+}
+
+.g-i-5{
+    background-color: rgb(190, 74, 28);
+    grid-area: footer;
+}
+
+.g-i-6{
+    background-color: rgb(202, 148, 13);
+    grid-area: left-sidebar-gold;
+    align-self: center;
+    justify-self: center;
+}
